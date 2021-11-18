@@ -1,0 +1,51 @@
+<section>
+    <link rel="icon" href="src/assets/img/LogiIcon.png" sizes="any">
+    <!--LOGIN-->
+    <p class="space"></p>
+    <div class="container shadow p-3 mb-5">
+        <div>
+            <img src="/assets/logoTest.png" alt="Logo" class="image">
+        </div>
+        <div class="inside">
+            <form class="form-group-email" [formGroup]="FormVuelosLogin" (ngSubmit)="AuthorizeUser()">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" formControlName="FormInputEmail"
+                        placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Password</label>
+                    <input type="password" class="form-control" placeholder="Qwerty123" formControlName="FormInputPassword">
+                </div>
+                <div class="loginBtn">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" role="button" [disabled]="FormVuelosLogin.invalid">Login</button>
+                </div>
+
+            </form>
+
+            <div class="alert alert-danger" role="alert" *ngIf="StateAuthUser">
+                <strong>User or Password Incorrect</strong>
+            </div>
+
+            <div class="forgotPass">
+                <a class="btn btn-forgotPass" role="button" aria-disabled="true" routerLink="/Forgot-Access"
+                    routerLinkActive="true">Forgot Password?</a>
+            </div>
+            <div class="FacebookBtn">
+                <button type="submit" class="btn btn-secondary btn-lg btn-block" role="button" disabled>
+                    <img width="20px" style="margin-bottom:3px; margin-right:30px" src="/assets/FacebookIcon.png"
+                        alt="FacebookIcon">Login with Facebook</button>
+            </div>
+            <div class="GmailBtn">
+                <button type="submit" class="btn btn-secondary btn-lg btn-block" disabled><img width="20px"
+                        style="margin-bottom:3px; margin-right:30px" src="/assets/GoogleIcon.png" alt="GoogleIcon">Login
+                    with Gmail</button>
+            </div>
+            <div class="Register">
+                <a class="btn btn-forgotPass" role="button" routerLink="/Register-Access" routerLinkActive="true">Don't
+                    have an account, Register Here</a>
+            </div>
+        </div>
+    </div>
+
+</section>
