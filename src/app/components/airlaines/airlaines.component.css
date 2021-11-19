@@ -1,0 +1,190 @@
+/*
+All
+*/
+
+.btn-primary
+{
+    background-color:  #28B0F5 ; 
+    border-color:  #28B0F5;
+    color: #ffffff;
+    
+}
+.btn-primary:hover, 
+.btn-primary:focus, 
+.open .dropdown-toggle.btn-primary
+{
+    background-color: #2C9FDA !important;
+    border-color: #2C9FDA !important; 
+    color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: none!important;
+}
+
+.btn-primary:active
+{
+    background-color: #3BB6F5 !important;
+    border-color: #3BB6F5 !important; 
+    color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: none!important;
+
+}
+.btn-secondary
+{
+    background-color:  #F7B318 ; 
+    border-color:  #F7B318;
+    color: #ffffff;
+    
+}
+.btn-secondary:hover, 
+.btn-secondary:focus, 
+.open .dropdown-toggle.btn-primary
+{
+    background-color: #EF992A !important;
+    border-color: #EF992A !important; 
+    color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: none!important;
+}
+
+.btn-secondary:active
+{
+    background-color: #F57E35 !important;
+    border-color: #F57E35 !important; 
+    color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: none!important;
+}
+
+
+
+.material-icons 
+{
+    font-family: 'Material Icons';
+    align-items: center;
+    align-content: center;
+    align-content: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+  .toLeft
+  {
+    margin-left:auto;
+    align-items: center;
+    align-content: center;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+
+
+.sidenav,
+.nav
+{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 82px;
+    background-color: #28B0F5;
+    overflow-x: hidden;
+}
+.list-group-item
+{
+    background-color: #28B0F5;
+    color: #ffffff;
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] 
+{
+    -moz-appearance: textfield;
+}
+
+
+
+.container
+{
+    margin-top: 120px;
+    margin-left: 30%;
+    width: 900px;
+    height: 800px;
+    align-content: center;
+   
+}
+ 
+.navbar-brand
+{
+    color: black;
+}
+
+
+.Paquetes
+{
+    padding-top: 90px;
+    padding-left: 50px;
+    align-content: center;
+}
+ 
+.card
+{
+    margin: -50px;
+}
+
+.FlighSearch
+{
+    height: 300px;
+    border-radius: 5mm;
+    width: 94%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    
+}
+
+.infoFlight
+{
+    margin-left: 50px;
+    padding-top: 20px;
+}
