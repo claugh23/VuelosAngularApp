@@ -16,6 +16,8 @@ import { GatesComponent } from './components/gates/gates.component';
 import { CountriesComponent } from './components/countries/countries.component';
 import { SystemLogsComponent } from './components/system-logs/system-logs.component';
 import { HistoricalComponent } from './components/historical/historical.component';
+import { UserInformationComponent } from './components/user-information/user-information.component';
+import { FlightSearchComponent } from './components/flight-search/flight-search.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { HistoricalComponent } from './components/historical/historical.componen
     GatesComponent,
     CountriesComponent,
     SystemLogsComponent,
-    HistoricalComponent
+    HistoricalComponent,
+    UserInformationComponent,
+    FlightSearchComponent
   ],
   imports: [
     BrowserModule,
