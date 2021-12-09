@@ -6,34 +6,34 @@
         <img src="/assets/logoTest.png" alt="Logo" class="image">
     </div>
     <div class="inside">
-        <form class="form-group-email">
+        <form [formGroup]="FormCrearUsuario" class="form-group-email" (ngSubmit)="RegistrarUsuario()">
             <div class="form-group">
                 <label for="exampleFormControlInput1">First Name</label>
-                <input type="text" class="form-control" id="FirstName" placeholder="John">
+                <input type="text" class="form-control" id="FirstName" placeholder="John" formControlName="NameForm">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Last Name</label>
-                <input type="text" class="form-control" id="LastName" placeholder="Doe">
+                <input type="text" class="form-control" id="LastName" placeholder="Doe" formControlName="LastNameForm">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" formControlName="EmailForm">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Username</label>
-                <input type="text" class="form-control" id="Username" placeholder="JohnDoe123">
+                <input type="text" class="form-control" id="Username" placeholder="JohnDoe123" formControlName="UserNameForm">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Password</label>
-                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Qwerty123">
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Qwerty123" formControlName="PasswordForm">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Confirm Password</label>
-                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Qwerty123">
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Qwerty123" formControlName="ConfirmPassForm">
             </div>
             <div class="RegisterBtn">
-                <a type="submit" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="true"
-                    href="Login.html">Register</a>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="true" [disabled]="FormCrearUsuario.invalid"
+                   >Register</button>
             </div>
 
         </form>
