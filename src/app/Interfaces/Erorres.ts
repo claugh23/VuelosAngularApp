@@ -1,6 +1,6 @@
 export interface ErroresModel{
     id_error:Number;
-    Fecha:string;
+    fecha:string;
     hora:string;
-    Mensaje:string;
+    mensaje:string;
 }

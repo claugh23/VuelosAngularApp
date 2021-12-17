@@ -1,0 +1,101 @@
+<app-home-side-navbar></app-home-side-navbar>
+<div id="main" class= "container">
+    <h3 style="text-align: center;">Flight Selected</h3>    
+    <div class="FlighSearch" >
+        <form class = "infoFlight">
+
+            <div class="form-group row">
+                <div class="col-sm-2" >
+                    <img rel="icon" src="/assets/copaTemporal.png"alt="Airline">
+                </div>
+                <div class="col-sm-2 form-group row" >
+                    <label   class=" col-form-label horaA">5:30</label>
+                    <label  class=" col-form-label">-</label>
+                    <label   class=" col-form-label horaA">8:50</label>
+                </div>
+                <div class="col-sm-3 form-group row" >
+                    <label class=" col-form-label">SJO</label>
+                    <label class=" col-form-label"><i class="large material-icons">arrow_forward</i></label>
+                    <label class=" col-form-label">CUN</label>
+                </div>
+                <div class="col-sm-3 form-group row" >
+                    <label class=" col-form-label">3 </label>
+                    <label class=" col-form-label">-Hours</label>
+                </div>
+                <div class="col-sm-3">
+                    <a routerLink="/Home-Travelers" class="btn btn-dark" >Go Back</a>
+                </div>
+            </div>
+        
+            <div class="form-group row">
+                <div class="col-sm-2" >
+                    <img rel="icon" src="/assets/copaTemporal.png"alt="Airline">
+                </div>
+                <div class="col-sm-2 form-group row" >
+                    <label   class=" col-form-label horaA">12:30</label>
+                    <label  class=" col-form-label">-</label>
+                    <label   class=" col-form-label horaA">14:30</label>
+                </div>
+                <div class="col-sm-3 form-group row" >
+                    <label class=" col-form-label">CUN</label>
+                    <label class=" col-form-label"><i class="large material-icons">arrow_forward</i></label>
+                    <label class=" col-form-label">JSO</label>
+                </div>
+                <div class="col-sm-3 form-group row" >
+                    <label class=" col-form-label">3 </label>
+                    <label class=" col-form-label">-Hours</label>
+                </div>
+                <div class="col-sm-2 form-group row" >
+                    <label class=" col-form-label">Price: </label>
+                    <label class=" col-form-label">750</label>
+                    <label class=" col-form-label">$</label>
+                </div>
+            </div>
+        </form>
+    </div>
+  
+        <h3  style="text-align: center;" >Payment Information</h3>
+
+    <div class="Paymentform-group row ">
+        <div class="col-sm-3"></div>
+        <div class="FlighBuy shadow" >
+            <form class = "infoFlightBuy">
+                <div class="form-group row col-sm-9">
+                    <img  class= "tarjetas" src="/assets/tarjetas.jpg">
+                </div>
+                <div class="col-sm-9">
+                    <div class="form-group row">
+                        <label for="cardNumber">Card Holder Name</label>
+                        <div class="input-group">
+                            <input  type="text" class="form-control" name="cardNumber" placeholder="Valid Name" autocomplete="cc-number" required autofocus/>
+                            <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                        </div>                          
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="form-group row">
+                        <label for="cardNumber">Card Number</label>
+                        <div class="input-group">
+                            <input  type="number" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" required autofocus/>
+                            <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                        </div>                          
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="cardExpiry"><span class="hidden-xs">Expiration Date</span></label>
+                        <input  type="number"  class="form-control"  name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required  />
+                    </div>
+                    <div class="col-sm-3">
+                    <label for="cardCVC">Code</label>
+                    <input type="number" class="form-control"name="cardCVC"placeholder="CVC"autocomplete="cc-csc"required/>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <a href="../HTML/BuyOptionConfirm.html" class="btn btn-success btn-lg btn-block" >Buy Flight</a>
+                </div>
+            </form>    
+        </div>
+    </div>
+   
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ErroresModel } from 'src/app/Interfaces/Erorres';
+import { ErroresServiceService } from 'src/app/Services/Errores/errores-service.service';
 
 @Component({
   selector: 'app-system-logs',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SystemLogsComponent implements OnInit {
 
-  constructor() { }
+  ListaErrores:ErroresModel[]=[]
 
-  ngOnInit(): void {
+  constructor(private APILogs:ErroresServiceService) { }
+
+
+  LoadErrores(){
+
+    this.APILogs.GetErroresAll().subscribe((result:any) => {
+
+      this.ListaErrores = result;
+    })
+
+  }
+
+
+  ngOnInit() {
+
+    this.LoadErrores();
   }
 
 }

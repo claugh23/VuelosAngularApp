@@ -19,6 +19,8 @@ import { SystemLogsComponent } from './components/system-logs/system-logs.compon
 import { HistoricalComponent } from './components/historical/historical.component';
 import { UserInformationComponent } from './components/user-information/user-information.component';
 import { FlightSearchComponent } from './components/flight-search/flight-search.component';
+import { BuyFlightComponent } from './components/buy-flight/buy-flight.component';
+import { CreditCardPaymentComponent } from './components/credit-card-payment/credit-card-payment.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +37,17 @@ import { FlightSearchComponent } from './components/flight-search/flight-search.
     SystemLogsComponent,
     HistoricalComponent,
     UserInformationComponent,
-    FlightSearchComponent
+    FlightSearchComponent,
+    BuyFlightComponent,
+    CreditCardPaymentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

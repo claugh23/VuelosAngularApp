@@ -1,7 +1,9 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AirlainesComponent } from './components/airlaines/airlaines.component';
+import { BuyFlightComponent } from './components/buy-flight/buy-flight.component';
 import { CountriesComponent } from './components/countries/countries.component';
+import { CreditCardPaymentComponent } from './components/credit-card-payment/credit-card-payment.component';
 import { FlightSearchComponent } from './components/flight-search/flight-search.component';
 import { FlightsComponent } from './components/flights/flights.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
@@ -27,6 +29,8 @@ const routes: Routes = [
   {path:'Current-Logs',component:SystemLogsComponent},
   {path:'Current-Historical',component:HistoricalComponent},
   {path:'Current-User',component:UserInformationComponent},
+  {path:'Buy-Flights',component:BuyFlightComponent},
+  {path:'CreditCard-Payment',component:CreditCardPaymentComponent},
   {path:'**',redirectTo:'Login-Access'}
 
 ];

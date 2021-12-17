@@ -12,11 +12,13 @@ export class CrearUsuarioServiceService {
 
   EndpointBackend: string = "https://localhost:5001/api/CrearUsuario";
 
-   //Endpoint para la autenticacion de usuario mediante "autenticado" o "no autenticado"
-   PostAuthenticateUser(credentials: CreateUserModel) {
+  //Endpoint para la autenticacion de usuario mediante "autenticado" o "no autenticado"
+  PostAuthenticateUser(credentials: CreateUserModel) {
 
-    return this.HttpRequest.post(this.EndpointBackend, credentials);
+    return this.HttpRequest.post(this.EndpointBackend+"/Authenticate", credentials);
   }
+
+ 
 
   GetCrearUsuarioAll() {
 
@@ -28,15 +30,15 @@ export class CrearUsuarioServiceService {
     return this.HttpRequest.post<CreateUserModel>(this.EndpointBackend, usuario);
   }
 
- 
-  PutCrearUsuario(update:CreateUserModel){
 
-    return this.HttpRequest.put(this.EndpointBackend,update);
+  PutCrearUsuario(update: CreateUserModel) {
+
+    return this.HttpRequest.put(this.EndpointBackend, update);
   }
 
-  DeleteCrearUsuario(idCrearUsuario:string):Observable<string>{
+  DeleteCrearUsuario(idCrearUsuario: string): Observable<string> {
 
-    return this.HttpRequest.delete<string>(this.EndpointBackend+idCrearUsuario);
+    return this.HttpRequest.delete<string>(this.EndpointBackend + idCrearUsuario);
 
   }
 

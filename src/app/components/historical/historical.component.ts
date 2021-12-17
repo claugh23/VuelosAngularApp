@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ComprasVueloModel } from 'src/app/Interfaces/CompraVuelos';
+import { ComprasVuelosService } from 'src/app/Services/ComprasVuelos/compras-vuelos.service';
 
 @Component({
   selector: 'app-historical',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoricalComponent implements OnInit {
 
-  constructor() { }
+  ListaCompraVuelos:ComprasVueloModel[] = [];
 
-  ngOnInit(): void {
+  constructor(private APIComprasVuelos:ComprasVuelosService) { }
+
+
+  CargarCompraVuelos(){
+
+    this.APIComprasVuelos.GetComprasVuelosAll().subscribe((result:any) =>{
+
+      this.ListaCompraVuelos = result;
+    })
+
+  }
+  ngOnInit() {
+
+    this.CargarCompraVuelos()
   }
 
 }

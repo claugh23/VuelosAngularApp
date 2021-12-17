@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { CreateUserModel } from 'src/app/Interfaces/CrearUsuario';
+import { UsuarioModel } from 'src/app/Interfaces/Usuario';
+import { CrearUsuarioServiceService } from 'src/app/Services/CrearUsuario/crear-usuario-service.service';
+import { UsuarioServiceService } from 'src/app/Services/Usuario/usuario-service.service';
 
 @Component({
   selector: 'app-user-information',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserInformationComponent implements OnInit {
 
-  constructor() { }
+  ListaUsers:CreateUserModel[]=[];
 
-  ngOnInit(): void {
+  constructor(private ApiUsers:CrearUsuarioServiceService) { }
+
+
+  CargarUsuarios(){
+    this.ApiUsers.GetCrearUsuarioAll().subscribe((result:any) => {
+      this.ListaUsers = result;
+    })
+  }
+  ngOnInit() {
+    this.CargarUsuarios();
+
   }
 
 }

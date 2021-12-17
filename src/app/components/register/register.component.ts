@@ -41,14 +41,14 @@ export class RegisterComponent implements OnInit {
     this.GetRandomId();
 
     const crearUsuario: CreateUserModel = {
-      IdUsuario: this.RandomNumberSet,
-      Nombre: this.FormCrearUsuario.get('NameForm')?.value,
-      Apellidos: this.FormCrearUsuario.get('LastNameForm')?.value,
-      Email: this.FormCrearUsuario.get('EmailForm')?.value,
-      Usuario: this.FormCrearUsuario.get('UserNameForm')?.value,
-      Password: this.FormCrearUsuario.get('PasswordForm')?.value,
-      ConfPassword: this.FormCrearUsuario.get('ConfirmPassForm')?.value,
-      TipoUsuario_IdtiposUsuario: "1"
+      idUsuario: this.RandomNumberSet,
+      nombre: this.FormCrearUsuario.get('NameForm')?.value,
+      apellidos: this.FormCrearUsuario.get('LastNameForm')?.value,
+      email: this.FormCrearUsuario.get('EmailForm')?.value,
+      usuario: this.FormCrearUsuario.get('UserNameForm')?.value,
+      password: this.FormCrearUsuario.get('PasswordForm')?.value,
+      confPassword: this.FormCrearUsuario.get('ConfirmPassForm')?.value,
+      tipoUsuario_IdtiposUsuario: "1"
 
     }
 

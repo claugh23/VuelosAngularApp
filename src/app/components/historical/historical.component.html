@@ -8,42 +8,26 @@
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Flight Number</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Last Name</th>
-                            <th scope="col">Departure Country</th>
-                            <th scope="col">Destination Country</th>
-                            <th scope="col">Gate</th>
-                            <th scope="col">Date</th>
+                            <th scope="col">precio</th>
+                            <th scope="col">Aerolinea</th>
+                            <th scope="col">Hora de Salida</th>
+                            <th scope="col">Hora de Llegada</th>
+                            <th scope="col">Estado Actual</th>
+                            <th scope="col">Puerta de abordaje</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody *ngFor="let item of ListaCompraVuelos">
                         <tr>
-                            <th scope="col">1</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
+                            <th scope="col">{{item?.id_CompraVuelo}}</th>
+                            <th scope="col">{{item?.precio}}</th>
+                            <th scope="col">{{item?.aeroLinea}}</th>
+                            <th scope="col">{{item?.horaSalida}}</th>
+                            <th scope="col">{{item?.horaLlegada}}</th>
+                            <th scope="col">{{item?.estadoVuelo}}</th>
+                            <th scope="col">{{item?.puertaAbordaje}}</th>
+                           
                         </tr>
-                        <tr>
-                            <th scope="col">2</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                        </tr>
-                        <tr>
-                            <th scope="col">3</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                            <th scope="col">Placeholder</th>
-                        </tr>
+                      
                     </tbody>
                 </table>
             </div>
